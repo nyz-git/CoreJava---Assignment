@@ -10,7 +10,6 @@ public class DataMunger {
 		DataMunger dataMunger = new DataMunger();
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Query");
 		String query = sc.next();
 		// call the parseQuery method and pass the queryString variable as a
 		// parameter
@@ -94,6 +93,9 @@ public class DataMunger {
 				}
 			}
 			String whereClauseElement[] = whereString.split(" and | or ", 2);
+			while (whereClauseElement.length != 1) {
+				whereClauseElement = whereClauseElement[1].split(" and | or ", 2);
+			}
 		return whereClauseElement;
 
 	}

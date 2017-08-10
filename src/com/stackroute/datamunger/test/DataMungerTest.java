@@ -84,7 +84,7 @@ public class DataMungerTest {
 				"select city,winner,player_match from ipl.csv where season > 2014 or city ='Bangalore'"));
 		assertEquals(new String[] { "season > 2014", "city ='Bangalore'" }, dataMunger.getConditions(
 				"select city,winner,player_match from ipl.csv where season > 2014 or city ='Bangalore'"));
-		//assertEquals(new String[] { "or" }, dataMunger.getLogicalOperators(
+		 //assertEquals(new String[] { "or" }, dataMunger.getLogicalOperators(
 				//"select city,winner,player_match from ipl.csv where season > 2014 or city ='Bangalore'"));
 	}
 
