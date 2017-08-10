@@ -10,6 +10,11 @@ public class DataMunger {
 		DataMunger dataMunger = new DataMunger();
 
 		Scanner sc = new Scanner(System.in);
+<<<<<<< HEAD
+=======
+		System.out.println("Enter Query");
+		//please check this line
+>>>>>>> 97b5893a6184644acc1f55f3c6f2537b766e2347
 		String query = sc.next();
 		// call the parseQuery method and pass the queryString variable as a
 		// parameter
